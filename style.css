@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+}
+
+.main {
+    /* margin: 0; */
+
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.header{
+    /* margin: 0; */
+    height: 100px;
+    width: 100%;
+    /* background-color: rgba(161, 23, 23, 0.837); */
+    background-color: rgba(65, 105, 225, 0.696);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    box-sizing: border-box;
+    
+}
+
+.header h1 {
+    color: #fff;
+    margin: 0;
+    font-weight: 800;
+}
+
+.nav {
+    display: flex;
+    gap: 3vw;
+    justify-content: space-between;
+    /* background-color: royalblue; */
+   
+
+}
+.nav h4 {
+    font-size:3vh;
+    font-weight: 800;
+    color: white;
+    font-weight: 800;
+}
+
+.nav>i {
+    display: none;
+}
+
+ .content {
+    /* height: calc(100% - 100px); */
+
+    height: 86vh;
+    width: 100%;
+
+    /* background-color: blue; */
+    /* position: relative; */
+    display: flex;
+} 
+
+.left {
+    height: 100%;
+    /* height: 100%; */
+     width: 50%; 
+    /* background-color: pink; */
+    background-color: #282366;
+    color: #fff;
+    font-weight: 700;
+} 
+.right {
+     height: 100%; 
+    width: 50%; 
+    background-color: red;
+}
+.left h2 {
+    font-size: 2.5vw;
+    padding: 2vw;
+    
+}
+span{
+    font-size: 4.5vw;
+    color: royalblue;
+}
+.left p {
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 0 2vw;
+}
+button {
+    margin-left: 10px;
+    /* padding: 10px; */
+    height: 4vw;
+    width: 10vw;
+    /* padding: 5vw 3vw; */
+    /* align-items: center; */
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #C155E7;
+    color: #fff;
+    margin-left: 2vw;
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:600px) {
+   
+    .header {
+        background-color: royalblue;
+        height: 60px;
+    }
+    .header h4 {
+        display: none;
+
+    }
+    .header h1 {
+        color: black;
+        padding: 0vh 4vw ;
+    }
+
+    .nav>i {
+        display: block;
+        font-size: 3.8vh;
+        font-weight: 800;
+        padding: 0 2vw;
+
+    }
+    .content {
+        flex-direction: column;
+        
+
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .left h2 {
+        font-size: 3.5vh;
+        margin-top:10px ;
+        margin-bottom: 15px;
+
+    }
+    .left p {
+        font-size: 1.8vh;
+    }
+
+    button {
+     margin-left: 35vw;
+     /* padding: 0 2vw; */
+     width: 19vw;
+     height: 3.5vh;
+    }
+    span {
+        color: chocolate;
+        font-size: 6.3vw;
+    }
+   
+    
+}
